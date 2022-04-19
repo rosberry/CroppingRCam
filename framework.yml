@@ -1,0 +1,32 @@
+name: CroppingRCam
+options:
+  bundleIdPrefix: com.rosberry
+targets:
+  CroppingRCam:
+    type: framework
+    platform: iOS
+    deploymentTarget: "11.0"
+    sources: CroppingRCam/Sources
+    info:
+      path: CroppingRCam/Sources/Info.plist
+    settings:
+      base:
+        INFOPLIST_FILE: Sources/Info.plist
+    postCompileScripts:
+      - script: |
+          if command -v swiftlint >/dev/null; then
+            swiftlint
+          else
+            echo "warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint"
+          fi
+        name: Swiftlint
+  CroppingRCamTests:
+    type: bundle.unit-test
+    platform: iOS
+    deploymentTarget: "11.0"
+    sources: CroppingRCam
+    info:
+      path: CroppingRCam/Tests/Info.plist
+    settings:
+      base:
+        INFOPLIST_FILE: Tests/Info.plist

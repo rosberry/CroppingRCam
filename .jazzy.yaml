@@ -1,0 +1,4 @@
+author: Rosberry
+author_url: https://rosberry.com
+github_url: https://github.com/rosberry/CroppingRCam
+xcodebuild_arguments: [-workspace, 'CroppingRCam.xcworkspace', -scheme, 'CroppingRCam']
