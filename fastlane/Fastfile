@@ -1,0 +1,28 @@
+import 'sources/lib/jira.rb'
+import 'sources/lib/slack.rb'
+import 'sources/lib/gitflow.rb'
+import 'sources/lib/CI.rb'
+
+import 'sources/helper/certificate_helper.rb'
+import 'sources/helper/provisioning_profiles_helper.rb'
+import 'sources/helper/match_helper.rb'
+import 'sources/helper/unit_testing_helper.rb'
+import 'sources/helper/build_number_helper.rb'
+import 'sources/helper/changelog_helper.rb'
+import 'sources/helper/platform_helper.rb'
+import 'sources/helper/xcode_helper.rb'
+
+import 'hooks/match_hooks.rb' if File.exists?('hooks/match_hooks.rb')
+import 'hooks/build_hooks.rb' if File.exists?('hooks/build_hooks.rb')
+
+import 'sources/RSBMatch.rb'
+import 'sources/RSBUpload.rb'
+import 'sources/RSBWorkflow.rb'
+import 'sources/RSBTest.rb'
+
+before_all do
+  if `gem list -i jira-ruby`.strip == "false"
+    sh('gem install jira-ruby')
+  end
+  require('jira-ruby')
+end

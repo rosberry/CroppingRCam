@@ -7,18 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1DCEA89BE373849AA91F3666 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5570501857A9253325C43E0B /* Info.plist */; };
+		11C8811C280EDF1600975243 /* CroppingRCam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C8811B280EDF1600975243 /* CroppingRCam.swift */; };
 		66DD8431B780675805D4A7AE /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = F4B736EF5DD83F1450526148 /* .swiftlint.yml */; };
-		CF3978BE9CD0AD46617BFB56 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5570501857A9253325C43E0B /* Info.plist */; };
-		F2D4A538518AFBDDC69BC5E8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3EF7CE50BEC59226552507E4 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11C8811B280EDF1600975243 /* CroppingRCam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CroppingRCam.swift; sourceTree = "<group>"; };
 		3EF7CE50BEC59226552507E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		4FD9E993816F8C057D069DFD /* .gitkeep */ = {isa = PBXFileReference; path = .gitkeep; sourceTree = "<group>"; };
+		4FD9E993816F8C057D069DFD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		514E6EBE325C78A12AA850B0 /* CroppingRCamTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = CroppingRCamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5570501857A9253325C43E0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		6C765A0A3255EB5FAC30CCDB /* .gitkeep */ = {isa = PBXFileReference; path = .gitkeep; sourceTree = "<group>"; };
+		6C765A0A3255EB5FAC30CCDB /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		DE98E50DC89BD1E91A4398CC /* CroppingRCam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CroppingRCam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4B736EF5DD83F1450526148 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,6 +55,7 @@
 			children = (
 				6C765A0A3255EB5FAC30CCDB /* .gitkeep */,
 				5570501857A9253325C43E0B /* Info.plist */,
+				11C8811B280EDF1600975243 /* CroppingRCam.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -64,7 +64,6 @@
 			isa = PBXGroup;
 			children = (
 				F4B736EF5DD83F1450526148 /* .swiftlint.yml */,
-				AE7A9BB49BB1D9EC687A8247 /* Sources */,
 				0CEA2DBC0A981C978132B85C /* Tests */,
 			);
 			name = CroppingRCam;
@@ -115,6 +114,9 @@
 			attributes = {
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
+					21B39D847AACE2746295813D = {
+						LastSwiftMigration = 1300;
+					};
 				};
 			};
 			buildConfigurationList = 71A57D545DEDA041A6A5DE69 /* Build configuration list for PBXProject "CroppingRCam" */;
@@ -140,7 +142,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DCEA89BE373849AA91F3666 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,8 +150,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				66DD8431B780675805D4A7AE /* .swiftlint.yml in Resources */,
-				F2D4A538518AFBDDC69BC5E8 /* Info.plist in Resources */,
-				CF3978BE9CD0AD46617BFB56 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +188,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11C8811C280EDF1600975243 /* CroppingRCam.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +215,7 @@
 		2FA77784AFA8657410274AB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -231,6 +232,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rosberry.CroppingRCam;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -239,6 +242,7 @@
 		8E77207102B57BA5F0CCF287 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -255,6 +259,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rosberry.CroppingRCam;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};

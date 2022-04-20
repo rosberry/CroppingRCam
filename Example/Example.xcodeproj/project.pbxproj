@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		11C88115280ECB8900975243 /* CroppingRCam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C88114280ECB8900975243 /* CroppingRCam.framework */; };
 		11C88116280ECB8900975243 /* CroppingRCam.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11C88114280ECB8900975243 /* CroppingRCam.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		6AA0AA035FE85B355505228F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC229F5C807DC324B3325E58 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -147,7 +146,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AA0AA035FE85B355505228F /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,13 +167,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = GPVA8JVMU3;
 				INFOPLIST_FILE = Example/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rosberry.Example;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rosberry.CroppingRCamExample;
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.rosberry.CroppingRCamExample";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
