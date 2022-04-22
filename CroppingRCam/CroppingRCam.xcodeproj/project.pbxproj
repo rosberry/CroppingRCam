@@ -3,49 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		11C34F772810342200C09F6B /* Bin.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C34F702810342200C09F6B /* Bin.xcframework */; };
-		11C34F782810342200C09F6B /* Bin.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11C34F702810342200C09F6B /* Bin.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		11C34F792810342200C09F6B /* Framezilla.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C34F712810342200C09F6B /* Framezilla.xcframework */; };
-		11C34F7A2810342200C09F6B /* Framezilla.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11C34F712810342200C09F6B /* Framezilla.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		11C34F7B2810342200C09F6B /* Base.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C34F722810342200C09F6B /* Base.xcframework */; };
-		11C34F7C2810342200C09F6B /* Base.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11C34F722810342200C09F6B /* Base.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		11C34F7D2810342200C09F6B /* RCam.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C34F732810342200C09F6B /* RCam.xcframework */; };
-		11C34F7E2810342200C09F6B /* RCam.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11C34F732810342200C09F6B /* RCam.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		11C34F7F2810342200C09F6B /* Deboogger.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C34F742810342200C09F6B /* Deboogger.xcframework */; };
-		11C34F802810342200C09F6B /* Deboogger.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11C34F742810342200C09F6B /* Deboogger.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		11C34F812810342200C09F6B /* Cripper.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C34F752810342200C09F6B /* Cripper.xcframework */; };
-		11C34F822810342200C09F6B /* Cripper.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11C34F752810342200C09F6B /* Cripper.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		11C34F832810342200C09F6B /* VisualEffectView.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C34F762810342200C09F6B /* VisualEffectView.xcframework */; };
-		11C34F842810342200C09F6B /* VisualEffectView.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11C34F762810342200C09F6B /* VisualEffectView.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		11C8811C280EDF1600975243 /* CroppingRCam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C8811B280EDF1600975243 /* CroppingRCam.swift */; };
+		113635792811183E00888D34 /* CroppingRCam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113635782811183E00888D34 /* CroppingRCam.swift */; };
+		11D31FCE281278C300CFB090 /* CropViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D31FCD281278C300CFB090 /* CropViewController.swift */; };
+		11D31FD028127B9800CFB090 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11D31FCF28127B9800CFB090 /* Assets.xcassets */; };
 		66DD8431B780675805D4A7AE /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = F4B736EF5DD83F1450526148 /* .swiftlint.yml */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		11C34F852810342200C09F6B /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				11C34F7C2810342200C09F6B /* Base.xcframework in Embed Frameworks */,
-				11C34F7A2810342200C09F6B /* Framezilla.xcframework in Embed Frameworks */,
-				11C34F802810342200C09F6B /* Deboogger.xcframework in Embed Frameworks */,
-				11C34F822810342200C09F6B /* Cripper.xcframework in Embed Frameworks */,
-				11C34F7E2810342200C09F6B /* RCam.xcframework in Embed Frameworks */,
-				11C34F842810342200C09F6B /* VisualEffectView.xcframework in Embed Frameworks */,
-				11C34F782810342200C09F6B /* Bin.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
+		113635782811183E00888D34 /* CroppingRCam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CroppingRCam.swift; sourceTree = "<group>"; };
 		11C34F702810342200C09F6B /* Bin.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Bin.xcframework; path = ../Carthage/Build/Bin.xcframework; sourceTree = "<group>"; };
 		11C34F712810342200C09F6B /* Framezilla.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Framezilla.xcframework; path = ../Carthage/Build/Framezilla.xcframework; sourceTree = "<group>"; };
 		11C34F722810342200C09F6B /* Base.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Base.xcframework; path = ../Carthage/Build/Base.xcframework; sourceTree = "<group>"; };
@@ -53,7 +22,8 @@
 		11C34F742810342200C09F6B /* Deboogger.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Deboogger.xcframework; path = ../Carthage/Build/Deboogger.xcframework; sourceTree = "<group>"; };
 		11C34F752810342200C09F6B /* Cripper.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Cripper.xcframework; path = ../Carthage/Build/Cripper.xcframework; sourceTree = "<group>"; };
 		11C34F762810342200C09F6B /* VisualEffectView.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = VisualEffectView.xcframework; path = ../Carthage/Build/VisualEffectView.xcframework; sourceTree = "<group>"; };
-		11C8811B280EDF1600975243 /* CroppingRCam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CroppingRCam.swift; sourceTree = "<group>"; };
+		11D31FCD281278C300CFB090 /* CropViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropViewController.swift; sourceTree = "<group>"; };
+		11D31FCF28127B9800CFB090 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3EF7CE50BEC59226552507E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4FD9E993816F8C057D069DFD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		514E6EBE325C78A12AA850B0 /* CroppingRCamTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = CroppingRCamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,13 +38,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11C34F7B2810342200C09F6B /* Base.xcframework in Frameworks */,
-				11C34F792810342200C09F6B /* Framezilla.xcframework in Frameworks */,
-				11C34F7F2810342200C09F6B /* Deboogger.xcframework in Frameworks */,
-				11C34F812810342200C09F6B /* Cripper.xcframework in Frameworks */,
-				11C34F7D2810342200C09F6B /* RCam.xcframework in Frameworks */,
-				11C34F832810342200C09F6B /* VisualEffectView.xcframework in Frameworks */,
-				11C34F772810342200C09F6B /* Bin.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +53,39 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
+		113635722811150700888D34 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				113635742811153000888D34 /* Core */,
+				113635732811152400888D34 /* Presentation */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		113635732811152400888D34 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				11D31FCA2812782D00CFB090 /* Crop */,
+				113635752811181300888D34 /* Coordinators */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		113635742811153000888D34 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		113635752811181300888D34 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				113635782811183E00888D34 /* CroppingRCam.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
 		11C34F6F2810342200C09F6B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +98,14 @@
 				11C34F762810342200C09F6B /* VisualEffectView.xcframework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		11D31FCA2812782D00CFB090 /* Crop */ = {
+			isa = PBXGroup;
+			children = (
+				11D31FCD281278C300CFB090 /* CropViewController.swift */,
+			);
+			path = Crop;
 			sourceTree = "<group>";
 		};
 		457E9D8FBCE7516B77DCAB1A /* Products */ = {
@@ -126,9 +130,10 @@
 		AE7A9BB49BB1D9EC687A8247 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				113635722811150700888D34 /* Classes */,
 				6C765A0A3255EB5FAC30CCDB /* .gitkeep */,
 				5570501857A9253325C43E0B /* Info.plist */,
-				11C8811B280EDF1600975243 /* CroppingRCam.swift */,
+				11D31FCF28127B9800CFB090 /* Assets.xcassets */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -154,7 +159,6 @@
 				3CB80D4C046C6A41A07EA853 /* Swiftlint */,
 				8551693AFADAFA1311986667 /* Resources */,
 				11C34F6E2810340A00C09F6B /* Frameworks */,
-				11C34F852810342200C09F6B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -217,6 +221,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11D31FD028127B9800CFB090 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +268,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11C8811C280EDF1600975243 /* CroppingRCam.swift in Sources */,
+				11D31FCE281278C300CFB090 /* CropViewController.swift in Sources */,
+				113635792811183E00888D34 /* CroppingRCam.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,9 +303,13 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build",
+				);
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -324,9 +334,13 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build",
+				);
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
