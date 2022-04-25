@@ -12,7 +12,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var coordinator: CroppingRCam?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        let coordinator = CroppingRCam()
+        let decorator = ModalStyleDecorator()
+        let coordinator = CroppingRCam(decorator: decorator)
         coordinator.delegate = self
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = coordinator.navigationController
@@ -32,6 +33,10 @@ extension AppDelegate: CroppingRCamDelegate {
     }
 
     func croppingRCamClosedEventTriggered(_ coordinator: CroppingRCam) {
+        coordinator.navigationController.popViewController(animated: true)
+    }
+
+    func croppingRCamBackEventTriggered(_ coordinator: CroppingRCam) {
         coordinator.navigationController.popViewController(animated: true)
     }
 }

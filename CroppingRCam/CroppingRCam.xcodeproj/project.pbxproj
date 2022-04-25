@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		113635792811183E00888D34 /* CroppingRCam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113635782811183E00888D34 /* CroppingRCam.swift */; };
-		11D31FCE281278C300CFB090 /* CropViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D31FCD281278C300CFB090 /* CropViewController.swift */; };
 		11D31FD028127B9800CFB090 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11D31FCF28127B9800CFB090 /* Assets.xcassets */; };
+		11D3202F28165CA500CFB090 /* Decorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D3202E28165CA500CFB090 /* Decorator.swift */; };
+		11D320312816621300CFB090 /* ModalStyleDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D320302816621300CFB090 /* ModalStyleDecorator.swift */; };
+		11D32036281672F500CFB090 /* ModalStyleDecorationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D32035281672F500CFB090 /* ModalStyleDecorationViewController.swift */; };
 		66DD8431B780675805D4A7AE /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = F4B736EF5DD83F1450526148 /* .swiftlint.yml */; };
 /* End PBXBuildFile section */
 
@@ -22,8 +24,10 @@
 		11C34F742810342200C09F6B /* Deboogger.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Deboogger.xcframework; path = ../Carthage/Build/Deboogger.xcframework; sourceTree = "<group>"; };
 		11C34F752810342200C09F6B /* Cripper.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Cripper.xcframework; path = ../Carthage/Build/Cripper.xcframework; sourceTree = "<group>"; };
 		11C34F762810342200C09F6B /* VisualEffectView.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = VisualEffectView.xcframework; path = ../Carthage/Build/VisualEffectView.xcframework; sourceTree = "<group>"; };
-		11D31FCD281278C300CFB090 /* CropViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropViewController.swift; sourceTree = "<group>"; };
 		11D31FCF28127B9800CFB090 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		11D3202E28165CA500CFB090 /* Decorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decorator.swift; sourceTree = "<group>"; };
+		11D320302816621300CFB090 /* ModalStyleDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalStyleDecorator.swift; sourceTree = "<group>"; };
+		11D32035281672F500CFB090 /* ModalStyleDecorationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalStyleDecorationViewController.swift; sourceTree = "<group>"; };
 		3EF7CE50BEC59226552507E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4FD9E993816F8C057D069DFD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		514E6EBE325C78A12AA850B0 /* CroppingRCamTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = CroppingRCamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,7 +69,6 @@
 		113635732811152400888D34 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				11D31FCA2812782D00CFB090 /* Crop */,
 				113635752811181300888D34 /* Coordinators */,
 			);
 			path = Presentation;
@@ -74,6 +77,7 @@
 		113635742811153000888D34 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				11D32034281672D200CFB090 /* Dercorator */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -100,12 +104,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		11D31FCA2812782D00CFB090 /* Crop */ = {
+		11D32034281672D200CFB090 /* Dercorator */ = {
 			isa = PBXGroup;
 			children = (
-				11D31FCD281278C300CFB090 /* CropViewController.swift */,
+				11D3202E28165CA500CFB090 /* Decorator.swift */,
+				11D320302816621300CFB090 /* ModalStyleDecorator.swift */,
+				11D32035281672F500CFB090 /* ModalStyleDecorationViewController.swift */,
 			);
-			path = Crop;
+			path = Dercorator;
 			sourceTree = "<group>";
 		};
 		457E9D8FBCE7516B77DCAB1A /* Products */ = {
@@ -268,8 +274,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11D31FCE281278C300CFB090 /* CropViewController.swift in Sources */,
+				11D320312816621300CFB090 /* ModalStyleDecorator.swift in Sources */,
 				113635792811183E00888D34 /* CroppingRCam.swift in Sources */,
+				11D32036281672F500CFB090 /* ModalStyleDecorationViewController.swift in Sources */,
+				11D3202F28165CA500CFB090 /* Decorator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
