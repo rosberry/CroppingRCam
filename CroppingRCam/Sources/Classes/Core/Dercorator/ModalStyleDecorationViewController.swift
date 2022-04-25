@@ -8,6 +8,7 @@
 import UIKit
 import Cripper
 import RCam
+import Framezilla
 
 public class ModalStyleDecorationViewController: UIViewController {
     public weak var delegate: DecoratorDelegate?
@@ -17,22 +18,20 @@ public class ModalStyleDecorationViewController: UIViewController {
 
     private lazy var bundle: Bundle = .init(for: Self.self)
 
-    public lazy var closeButton: UIButton = {
+    public private(set) lazy var closeButton: UIButton = {
         let button = UIButton(type: .system)
-        let image = UIImage(named: "ic_close_xs", in: bundle, compatibleWith: nil)
+        let image = UIImage(named: "ic_close", in: bundle, compatibleWith: nil)
         button.setImage(image, for: .normal)
         button.tintColor = .white
-        button.backgroundColor = .black.withAlphaComponent(0.3)
         button.addTarget(self, action: #selector(closeButtonPressed), for: .touchUpInside)
         return button
     }()
 
-    public lazy var applyButton: UIButton = {
+    public private(set) lazy var applyButton: UIButton = {
         let button = UIButton(type: .system)
-        let image = UIImage(named: "ic_close_xs", in: bundle, compatibleWith: nil)
+        let image = UIImage(named: "ic_apply", in: bundle, compatibleWith: nil)
         button.setImage(image, for: .normal)
         button.tintColor = .white
-        button.backgroundColor = .black.withAlphaComponent(0.3)
         button.addTarget(self, action: #selector(applyButtonPressed), for: .touchUpInside)
         return button
     }()
@@ -64,13 +63,15 @@ public class ModalStyleDecorationViewController: UIViewController {
         super.viewDidLayoutSubviews()
         viewController.view.frame = view.bounds
         closeButton.configureFrame { maker in
-            maker.size(width: 40, height: 40).cornerRadius(byHalf: .height)
-            maker.top(inset: 60).left(inset: 30)
+            let topInset = 25 + view.safeAreaInsets.top
+            maker.size(width: 35, height: 35)
+            maker.top(inset: topInset).left(inset: 30)
         }
 
         applyButton.configureFrame { maker in
-            maker.size(width: 40, height: 40).cornerRadius(byHalf: .height)
-            maker.top(inset: 60).right(inset: 30)
+            let topInset = 25 + view.safeAreaInsets.top
+            maker.size(width: 35, height: 35)
+            maker.top(inset: topInset).right(inset: 30)
         }
     }
 
