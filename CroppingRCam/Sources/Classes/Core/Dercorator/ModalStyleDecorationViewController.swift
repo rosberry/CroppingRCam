@@ -55,6 +55,11 @@ public class ModalStyleDecorationViewController: UIViewController {
         view.addSubview(applyButton)
     }
 
+    public override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.barStyle = .black
+    }
+
     public override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         viewController.view.frame = view.bounds

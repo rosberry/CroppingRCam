@@ -10,7 +10,7 @@ import Framezilla
 import CroppingRCam
 
 class ViewController: UIViewController {
-    var coordinator: CroppingRCam?
+    private var croppingRCamCoordinator: CroppingRCam?
 
     private lazy var imageView: UIImageView = {
         let imageView = UIImageView()
@@ -21,7 +21,9 @@ class ViewController: UIViewController {
 
     private lazy var button: UIButton = {
         let button = UIButton()
-        button.backgroundColor = .blue
+        button.backgroundColor = .black
+        button.tintColor = .white
+        button.setTitle("CroppingRCam", for: .normal)
         button.addTarget(self, action: #selector(openCroppingRCamController), for: .touchUpInside)
         return button
     }()
@@ -29,12 +31,17 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let decorator = ModalStyleDecorator()
-        guard let navC = navigationController else { return }
-        self.coordinator = CroppingRCam(decorator: decorator, navigationController: navC)
-        coordinator?.delegate = self
+        guard let navigationController = navigationController else { return }
+        self.croppingRCamCoordinator = CroppingRCam(decorator: decorator, navigationController: navigationController)
+        croppingRCamCoordinator?.delegate = self
         view.backgroundColor = .white
         view.addSubview(imageView)
         view.addSubview(button)
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.barStyle = .default
     }
 
     override func viewDidLayoutSubviews() {
@@ -51,10 +58,12 @@ class ViewController: UIViewController {
     }
 
     @objc private func openCroppingRCamController() {
-        guard let vc = coordinator?.rCamViewController else { return }
-        navigationController?.pushViewController(vc, animated: true)
+        guard let rCamViewController = croppingRCamCoordinator?.rCamViewController else { return }
+        navigationController?.pushViewController(rCamViewController, animated: true)
     }
 }
+
+// MARK: - CroppingRCamDelegate
 
 extension ViewController: CroppingRCamDelegate {
 
