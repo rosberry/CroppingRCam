@@ -19,18 +19,23 @@ public final class CroppingRCam {
     public var cropCustmizationHandler: ((CropperViewController) -> Void)?
 
     public let navigationController: UINavigationController
+    public let rCamViewController: UIViewController
     private let decorator: Decorator
 
     public init(decorator: Decorator,
+                navigationController: UINavigationController,
                 rCamCustomizationHandler: ((CameraViewController) -> Void)? = nil,
                 cropCustmizationHandler: ((CropperViewController) -> Void)? = nil) {
         self.decorator = decorator
         self.rCamCustomizationHandler = rCamCustomizationHandler
         self.cropCustmizationHandler = cropCustmizationHandler
+        self.navigationController = navigationController
         let rCamViewController = CameraViewController()
         let decoratedRCamViewController = decorator.decorateCameraViewController(cameraViewController: rCamViewController)
-        self.navigationController = UINavigationController(rootViewController: decoratedRCamViewController)
+        self.rCamViewController = decoratedRCamViewController
+//        self.navigationController = UINavigationController(rootViewController: decoratedRCamViewController)
         rCamViewController.delegate = self
+        decoratedRCamViewController.delegate = self
         decorator.delegate = self
         rCamViewController.automaticallyApplyOrientationToImage = true
         rCamCustomizationHandler?(rCamViewController)

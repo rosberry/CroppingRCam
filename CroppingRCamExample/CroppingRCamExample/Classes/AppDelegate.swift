@@ -12,13 +12,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var coordinator: CroppingRCam?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        let decorator = ModalStyleDecorator()
-        let coordinator = CroppingRCam(decorator: decorator)
-        coordinator.delegate = self
+//        let decorator = ModalStyleDecorator()
+//        let coordinator = CroppingRCam(decorator: decorator)
+//        coordinator.delegate = self
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = coordinator.navigationController
+        let navigationController = UINavigationController(rootViewController: ViewController())
+        window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
-        self.coordinator = coordinator
+//        self.coordinator = coordinator
         return true
     }
 }
