@@ -13,21 +13,20 @@
 		1166B0F7280FE4C800249022 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1166B0F5280FE4C800249022 /* LaunchScreen.storyboard */; };
 		116D540428118042007AD8EE /* CroppingRCam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B79B9E281127E9009C919A /* CroppingRCam.framework */; };
 		116D540528118042007AD8EE /* CroppingRCam.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11B79B9E281127E9009C919A /* CroppingRCam.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		116D540828118136007AD8EE /* Framezilla.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 113635632811148100888D34 /* Framezilla.xcframework */; };
-		116D540928118136007AD8EE /* Framezilla.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 113635632811148100888D34 /* Framezilla.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		116D540A281181AB007AD8EE /* Base.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 113635612811148100888D34 /* Base.xcframework */; };
-		116D540B281181AB007AD8EE /* Base.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 113635612811148100888D34 /* Base.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		116D540C281181AB007AD8EE /* Bin.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1136355E2811148100888D34 /* Bin.xcframework */; };
-		116D540D281181AB007AD8EE /* Bin.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1136355E2811148100888D34 /* Bin.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		116D540E281181AB007AD8EE /* Cripper.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1136355F2811148100888D34 /* Cripper.xcframework */; };
-		116D540F281181AB007AD8EE /* Cripper.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1136355F2811148100888D34 /* Cripper.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		116D5410281181AB007AD8EE /* Deboogger.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1136355D2811148100888D34 /* Deboogger.xcframework */; };
-		116D5411281181AB007AD8EE /* Deboogger.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1136355D2811148100888D34 /* Deboogger.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		116D5412281181AB007AD8EE /* Framezilla.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 113635632811148100888D34 /* Framezilla.xcframework */; };
-		116D5413281181AB007AD8EE /* RCam.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 113635602811148100888D34 /* RCam.xcframework */; };
-		116D5414281181AB007AD8EE /* RCam.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 113635602811148100888D34 /* RCam.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		116D5415281181AB007AD8EE /* VisualEffectView.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 113635622811148100888D34 /* VisualEffectView.xcframework */; };
-		116D5416281181AB007AD8EE /* VisualEffectView.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 113635622811148100888D34 /* VisualEffectView.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1185BBCB2816C77C003A519F /* Base.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 113635612811148100888D34 /* Base.xcframework */; };
+		1185BBCC2816C77C003A519F /* Base.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 113635612811148100888D34 /* Base.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1185BBCD2816C77C003A519F /* Bin.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1136355E2811148100888D34 /* Bin.xcframework */; };
+		1185BBCE2816C77C003A519F /* Bin.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1136355E2811148100888D34 /* Bin.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1185BBCF2816C77C003A519F /* Cripper.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1136355F2811148100888D34 /* Cripper.xcframework */; };
+		1185BBD02816C77C003A519F /* Cripper.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1136355F2811148100888D34 /* Cripper.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1185BBD12816C77C003A519F /* Deboogger.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1136355D2811148100888D34 /* Deboogger.xcframework */; };
+		1185BBD22816C77C003A519F /* Deboogger.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1136355D2811148100888D34 /* Deboogger.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1185BBD32816C77C003A519F /* Framezilla.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 113635632811148100888D34 /* Framezilla.xcframework */; };
+		1185BBD42816C77C003A519F /* Framezilla.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 113635632811148100888D34 /* Framezilla.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1185BBD52816C77C003A519F /* RCam.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 113635602811148100888D34 /* RCam.xcframework */; };
+		1185BBD62816C77C003A519F /* RCam.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 113635602811148100888D34 /* RCam.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1185BBD72816C77C003A519F /* VisualEffectView.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 113635622811148100888D34 /* VisualEffectView.xcframework */; };
+		1185BBD82816C77C003A519F /* VisualEffectView.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 113635622811148100888D34 /* VisualEffectView.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,14 +36,14 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				116D5414281181AB007AD8EE /* RCam.xcframework in Embed Frameworks */,
-				116D5411281181AB007AD8EE /* Deboogger.xcframework in Embed Frameworks */,
-				116D540B281181AB007AD8EE /* Base.xcframework in Embed Frameworks */,
-				116D540F281181AB007AD8EE /* Cripper.xcframework in Embed Frameworks */,
-				116D540928118136007AD8EE /* Framezilla.xcframework in Embed Frameworks */,
+				1185BBD62816C77C003A519F /* RCam.xcframework in Embed Frameworks */,
+				1185BBCC2816C77C003A519F /* Base.xcframework in Embed Frameworks */,
+				1185BBCE2816C77C003A519F /* Bin.xcframework in Embed Frameworks */,
+				1185BBD22816C77C003A519F /* Deboogger.xcframework in Embed Frameworks */,
 				116D540528118042007AD8EE /* CroppingRCam.framework in Embed Frameworks */,
-				116D540D281181AB007AD8EE /* Bin.xcframework in Embed Frameworks */,
-				116D5416281181AB007AD8EE /* VisualEffectView.xcframework in Embed Frameworks */,
+				1185BBD42816C77C003A519F /* Framezilla.xcframework in Embed Frameworks */,
+				1185BBD02816C77C003A519F /* Cripper.xcframework in Embed Frameworks */,
+				1185BBD82816C77C003A519F /* VisualEffectView.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -73,15 +72,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				116D5410281181AB007AD8EE /* Deboogger.xcframework in Frameworks */,
-				116D540A281181AB007AD8EE /* Base.xcframework in Frameworks */,
-				116D5415281181AB007AD8EE /* VisualEffectView.xcframework in Frameworks */,
-				116D5413281181AB007AD8EE /* RCam.xcframework in Frameworks */,
-				116D540E281181AB007AD8EE /* Cripper.xcframework in Frameworks */,
-				116D540828118136007AD8EE /* Framezilla.xcframework in Frameworks */,
+				1185BBD52816C77C003A519F /* RCam.xcframework in Frameworks */,
+				1185BBCB2816C77C003A519F /* Base.xcframework in Frameworks */,
+				1185BBCD2816C77C003A519F /* Bin.xcframework in Frameworks */,
+				1185BBD12816C77C003A519F /* Deboogger.xcframework in Frameworks */,
 				116D540428118042007AD8EE /* CroppingRCam.framework in Frameworks */,
-				116D540C281181AB007AD8EE /* Bin.xcframework in Frameworks */,
-				116D5412281181AB007AD8EE /* Framezilla.xcframework in Frameworks */,
+				1185BBD32816C77C003A519F /* Framezilla.xcframework in Frameworks */,
+				1185BBCF2816C77C003A519F /* Cripper.xcframework in Frameworks */,
+				1185BBD72816C77C003A519F /* VisualEffectView.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
