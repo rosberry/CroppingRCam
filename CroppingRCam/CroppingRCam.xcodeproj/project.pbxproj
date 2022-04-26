@@ -3,11 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		113635792811183E00888D34 /* CroppingRCam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113635782811183E00888D34 /* CroppingRCam.swift */; };
+		11A165A32817AC0B00011DBF /* Base.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C34F722810342200C09F6B /* Base.xcframework */; };
+		11A165A52817AC0B00011DBF /* Bin.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C34F702810342200C09F6B /* Bin.xcframework */; };
+		11A165A72817AC0B00011DBF /* Cripper.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C34F752810342200C09F6B /* Cripper.xcframework */; };
+		11A165A92817AC0C00011DBF /* Deboogger.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C34F742810342200C09F6B /* Deboogger.xcframework */; };
+		11A165AB2817AC0C00011DBF /* Framezilla.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C34F712810342200C09F6B /* Framezilla.xcframework */; };
+		11A165AD2817AC0C00011DBF /* RCam.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C34F732810342200C09F6B /* RCam.xcframework */; };
+		11A165AF2817AC0C00011DBF /* VisualEffectView.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C34F762810342200C09F6B /* VisualEffectView.xcframework */; };
 		11D31FD028127B9800CFB090 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11D31FCF28127B9800CFB090 /* Assets.xcassets */; };
 		11D3202F28165CA500CFB090 /* Decorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D3202E28165CA500CFB090 /* Decorator.swift */; };
 		11D320312816621300CFB090 /* ModalStyleDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D320302816621300CFB090 /* ModalStyleDecorator.swift */; };
@@ -42,6 +49,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11A165AD2817AC0C00011DBF /* RCam.xcframework in Frameworks */,
+				11A165A72817AC0B00011DBF /* Cripper.xcframework in Frameworks */,
+				11A165A32817AC0B00011DBF /* Base.xcframework in Frameworks */,
+				11A165A92817AC0C00011DBF /* Deboogger.xcframework in Frameworks */,
+				11A165AB2817AC0C00011DBF /* Framezilla.xcframework in Frameworks */,
+				11A165AF2817AC0C00011DBF /* VisualEffectView.xcframework in Frameworks */,
+				11A165A52817AC0B00011DBF /* Bin.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
