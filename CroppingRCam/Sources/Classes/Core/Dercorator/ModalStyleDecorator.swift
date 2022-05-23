@@ -13,8 +13,8 @@ public final class ModalStyleDecorator<ModalViewController: ModalStyleDecoration
     public weak var delegate: DecoratorDelegate?
 
     public func decorateCameraViewController(cameraViewController: CameraViewController) -> ModalStyleDecorationViewController {
-        cameraViewController.closeButton.isHidden = true
         let decoratedViewControler = ModalViewController(viewController: cameraViewController)
+        cameraViewController.closeButton.isHidden = true
         decoratedViewControler.applyButton.isHidden = true
         return decoratedViewControler
     }

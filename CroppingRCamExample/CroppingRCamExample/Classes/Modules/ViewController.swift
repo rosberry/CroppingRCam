@@ -31,7 +31,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let decorator = ModalStyleDecorator()
-        guard let navigationController = navigationController else { return }
+        guard let navigationController = navigationController else {
+            return
+        }
         self.croppingRCamCoordinator = CroppingRCam(decorator: decorator, navigationController: navigationController)
         croppingRCamCoordinator?.delegate = self
         view.backgroundColor = .white
@@ -58,7 +60,9 @@ class ViewController: UIViewController {
     }
 
     @objc private func openCroppingRCamController() {
-        guard let rCamViewController = croppingRCamCoordinator?.rCamViewController else { return }
+        guard let rCamViewController = croppingRCamCoordinator?.rCamViewController else {
+            return
+        }
         navigationController?.pushViewController(rCamViewController, animated: true)
     }
 }
