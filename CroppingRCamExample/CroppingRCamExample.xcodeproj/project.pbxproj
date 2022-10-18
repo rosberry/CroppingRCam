@@ -11,39 +11,39 @@
 		1166B0EF280FE4C500249022 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1166B0EE280FE4C500249022 /* ViewController.swift */; };
 		1166B0F4280FE4C800249022 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1166B0F3280FE4C800249022 /* Assets.xcassets */; };
 		1166B0F7280FE4C800249022 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1166B0F5280FE4C800249022 /* LaunchScreen.storyboard */; };
-		116D540428118042007AD8EE /* CroppingRCam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B79B9E281127E9009C919A /* CroppingRCam.framework */; };
-		116D540528118042007AD8EE /* CroppingRCam.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11B79B9E281127E9009C919A /* CroppingRCam.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		11A165C72817B09B00011DBF /* Base.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A165B22817AC6C00011DBF /* Base.xcframework */; };
-		11A165C82817B09B00011DBF /* Base.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11A165B22817AC6C00011DBF /* Base.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		11A165C92817B09C00011DBF /* Bin.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A165B32817AC6C00011DBF /* Bin.xcframework */; };
-		11A165CA2817B09C00011DBF /* Bin.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11A165B32817AC6C00011DBF /* Bin.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		11A165CB2817B09E00011DBF /* Cripper.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A165B42817AC6C00011DBF /* Cripper.xcframework */; };
-		11A165CC2817B09E00011DBF /* Cripper.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11A165B42817AC6C00011DBF /* Cripper.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		11A165CD2817B09F00011DBF /* Framezilla.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A165B62817AC6C00011DBF /* Framezilla.xcframework */; };
-		11A165CE2817B09F00011DBF /* Framezilla.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11A165B62817AC6C00011DBF /* Framezilla.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		11A165CF2817B0A000011DBF /* Deboogger.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A165B52817AC6C00011DBF /* Deboogger.xcframework */; };
-		11A165D02817B0A000011DBF /* Deboogger.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11A165B52817AC6C00011DBF /* Deboogger.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		11A165D12817B0A100011DBF /* RCam.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A165B72817AC6C00011DBF /* RCam.xcframework */; };
-		11A165D22817B0A100011DBF /* RCam.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11A165B72817AC6C00011DBF /* RCam.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		11A165D32817B0A200011DBF /* VisualEffectView.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A165B82817AC6C00011DBF /* VisualEffectView.xcframework */; };
-		11A165D42817B0A200011DBF /* VisualEffectView.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11A165B82817AC6C00011DBF /* VisualEffectView.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A90248C428FE47CA0038A4FC /* CroppingRCam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A90248C328FE47CA0038A4FC /* CroppingRCam.framework */; };
+		A90248C528FE47CA0038A4FC /* CroppingRCam.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A90248C328FE47CA0038A4FC /* CroppingRCam.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A90248CE28FE47E80038A4FC /* Framezilla.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A90248C728FE47E60038A4FC /* Framezilla.xcframework */; };
+		A90248CF28FE47E80038A4FC /* Framezilla.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A90248C728FE47E60038A4FC /* Framezilla.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A90248D028FE47E80038A4FC /* Base.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A90248C828FE47E60038A4FC /* Base.xcframework */; };
+		A90248D128FE47E80038A4FC /* Base.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A90248C828FE47E60038A4FC /* Base.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A90248D228FE47E80038A4FC /* RCam.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A90248C928FE47E60038A4FC /* RCam.xcframework */; };
+		A90248D328FE47E80038A4FC /* RCam.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A90248C928FE47E60038A4FC /* RCam.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A90248D428FE47E80038A4FC /* Deboogger.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A90248CA28FE47E60038A4FC /* Deboogger.xcframework */; };
+		A90248D528FE47E80038A4FC /* Deboogger.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A90248CA28FE47E60038A4FC /* Deboogger.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A90248D628FE47E80038A4FC /* Bin.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A90248CB28FE47E70038A4FC /* Bin.xcframework */; };
+		A90248D728FE47E80038A4FC /* Bin.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A90248CB28FE47E70038A4FC /* Bin.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A90248D828FE47E80038A4FC /* Cripper.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A90248CC28FE47E70038A4FC /* Cripper.xcframework */; };
+		A90248D928FE47E80038A4FC /* Cripper.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A90248CC28FE47E70038A4FC /* Cripper.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A90248DA28FE47E80038A4FC /* VisualEffectView.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A90248CD28FE47E80038A4FC /* VisualEffectView.xcframework */; };
+		A90248DB28FE47E90038A4FC /* VisualEffectView.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A90248CD28FE47E80038A4FC /* VisualEffectView.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		116D53F728118023007AD8EE /* Embed Frameworks */ = {
+		A90248C628FE47CA0038A4FC /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				11A165D22817B0A100011DBF /* RCam.xcframework in Embed Frameworks */,
-				11A165D02817B0A000011DBF /* Deboogger.xcframework in Embed Frameworks */,
-				11A165C82817B09B00011DBF /* Base.xcframework in Embed Frameworks */,
-				11A165CA2817B09C00011DBF /* Bin.xcframework in Embed Frameworks */,
-				116D540528118042007AD8EE /* CroppingRCam.framework in Embed Frameworks */,
-				11A165CE2817B09F00011DBF /* Framezilla.xcframework in Embed Frameworks */,
-				11A165CC2817B09E00011DBF /* Cripper.xcframework in Embed Frameworks */,
-				11A165D42817B0A200011DBF /* VisualEffectView.xcframework in Embed Frameworks */,
+				A90248D128FE47E80038A4FC /* Base.xcframework in Embed Frameworks */,
+				A90248D728FE47E80038A4FC /* Bin.xcframework in Embed Frameworks */,
+				A90248CF28FE47E80038A4FC /* Framezilla.xcframework in Embed Frameworks */,
+				A90248D528FE47E80038A4FC /* Deboogger.xcframework in Embed Frameworks */,
+				A90248D928FE47E80038A4FC /* Cripper.xcframework in Embed Frameworks */,
+				A90248D328FE47E80038A4FC /* RCam.xcframework in Embed Frameworks */,
+				A90248C528FE47CA0038A4FC /* CroppingRCam.framework in Embed Frameworks */,
+				A90248DB28FE47E90038A4FC /* VisualEffectView.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,6 +65,14 @@
 		11A165B72817AC6C00011DBF /* RCam.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RCam.xcframework; path = "/Users/nikita/Desktop/Working Projects/CroppingRCam/CroppingRCam/../Carthage/Build/RCam.xcframework"; sourceTree = "<absolute>"; };
 		11A165B82817AC6C00011DBF /* VisualEffectView.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = VisualEffectView.xcframework; path = "/Users/nikita/Desktop/Working Projects/CroppingRCam/CroppingRCam/../Carthage/Build/VisualEffectView.xcframework"; sourceTree = "<absolute>"; };
 		11B79B9E281127E9009C919A /* CroppingRCam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CroppingRCam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A90248C328FE47CA0038A4FC /* CroppingRCam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CroppingRCam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A90248C728FE47E60038A4FC /* Framezilla.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Framezilla.xcframework; path = ../Carthage/Build/Framezilla.xcframework; sourceTree = "<group>"; };
+		A90248C828FE47E60038A4FC /* Base.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Base.xcframework; path = ../Carthage/Build/Base.xcframework; sourceTree = "<group>"; };
+		A90248C928FE47E60038A4FC /* RCam.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RCam.xcframework; path = ../Carthage/Build/RCam.xcframework; sourceTree = "<group>"; };
+		A90248CA28FE47E60038A4FC /* Deboogger.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Deboogger.xcframework; path = ../Carthage/Build/Deboogger.xcframework; sourceTree = "<group>"; };
+		A90248CB28FE47E70038A4FC /* Bin.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Bin.xcframework; path = ../Carthage/Build/Bin.xcframework; sourceTree = "<group>"; };
+		A90248CC28FE47E70038A4FC /* Cripper.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Cripper.xcframework; path = ../Carthage/Build/Cripper.xcframework; sourceTree = "<group>"; };
+		A90248CD28FE47E80038A4FC /* VisualEffectView.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = VisualEffectView.xcframework; path = ../Carthage/Build/VisualEffectView.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,14 +80,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11A165C72817B09B00011DBF /* Base.xcframework in Frameworks */,
-				11A165CF2817B0A000011DBF /* Deboogger.xcframework in Frameworks */,
-				11A165D12817B0A100011DBF /* RCam.xcframework in Frameworks */,
-				116D540428118042007AD8EE /* CroppingRCam.framework in Frameworks */,
-				11A165CD2817B09F00011DBF /* Framezilla.xcframework in Frameworks */,
-				11A165C92817B09C00011DBF /* Bin.xcframework in Frameworks */,
-				11A165CB2817B09E00011DBF /* Cripper.xcframework in Frameworks */,
-				11A165D32817B0A200011DBF /* VisualEffectView.xcframework in Frameworks */,
+				A90248D028FE47E80038A4FC /* Base.xcframework in Frameworks */,
+				A90248D628FE47E80038A4FC /* Bin.xcframework in Frameworks */,
+				A90248CE28FE47E80038A4FC /* Framezilla.xcframework in Frameworks */,
+				A90248D428FE47E80038A4FC /* Deboogger.xcframework in Frameworks */,
+				A90248D828FE47E80038A4FC /* Cripper.xcframework in Frameworks */,
+				A90248D228FE47E80038A4FC /* RCam.xcframework in Frameworks */,
+				A90248C428FE47CA0038A4FC /* CroppingRCam.framework in Frameworks */,
+				A90248DA28FE47E80038A4FC /* VisualEffectView.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +125,14 @@
 		1166B107280FE4E400249022 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A90248C828FE47E60038A4FC /* Base.xcframework */,
+				A90248CB28FE47E70038A4FC /* Bin.xcframework */,
+				A90248CC28FE47E70038A4FC /* Cripper.xcframework */,
+				A90248CA28FE47E60038A4FC /* Deboogger.xcframework */,
+				A90248C728FE47E60038A4FC /* Framezilla.xcframework */,
+				A90248C928FE47E60038A4FC /* RCam.xcframework */,
+				A90248CD28FE47E80038A4FC /* VisualEffectView.xcframework */,
+				A90248C328FE47CA0038A4FC /* CroppingRCam.framework */,
 				11A165B22817AC6C00011DBF /* Base.xcframework */,
 				11A165B32817AC6C00011DBF /* Bin.xcframework */,
 				11A165B42817AC6C00011DBF /* Cripper.xcframework */,
@@ -156,7 +172,7 @@
 				1166B0E3280FE4C500249022 /* Sources */,
 				1166B0E4280FE4C500249022 /* Frameworks */,
 				1166B0E5280FE4C500249022 /* Resources */,
-				116D53F728118023007AD8EE /* Embed Frameworks */,
+				A90248C628FE47CA0038A4FC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
