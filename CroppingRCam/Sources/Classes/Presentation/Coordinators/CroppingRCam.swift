@@ -20,7 +20,6 @@ public final class CroppingRCam {
 
     private let decorator: Decorator
     private var navigationController: UINavigationController?
-    private var rCamViewController: UIViewController?
     private var isAnimated: Bool = true
 
     public init(decorator: Decorator,
@@ -30,14 +29,21 @@ public final class CroppingRCam {
         self.decorator = decorator
         self.rCamCustomizationHandler = rCamCustomizationHandler
         self.cropCustomizationHandler = cropCustomizationHandler
-        self.setupRCamViewController(navigationController)
+        self.navigationController = navigationController
+        decorator.delegate = self
     }
 
     public func pushCameraViewController(isAnimated: Bool = true) {
-        guard let rCamViewController = rCamViewController else {
-            return
-        }
         self.isAnimated = isAnimated
+        let rCamViewController = CameraViewController()
+        let decoratedRCamViewController = decorator.decorateCameraViewController(cameraViewController: rCamViewController)
+        if navigationController == nil {
+            self.navigationController = UINavigationController(rootViewController: decoratedRCamViewController)
+        }
+        rCamViewController.delegate = self
+        decoratedRCamViewController.delegate = self
+        rCamViewController.automaticallyApplyOrientationToImage = true
+        rCamCustomizationHandler?(rCamViewController)
         navigationController?.pushViewController(rCamViewController, animated: isAnimated)
     }
 
@@ -49,22 +55,6 @@ public final class CroppingRCam {
         navigationController?.pushViewController(decoratedCropViewController, animated: isAnimated)
     }
 
-    private func setupRCamViewController(_ navigationController: UINavigationController?) {
-        let rCamViewController = CameraViewController()
-        let decoratedRCamViewController = decorator.decorateCameraViewController(cameraViewController: rCamViewController)
-        if let navigationController = navigationController {
-            self.navigationController = navigationController
-        }
-        else {
-            self.navigationController = UINavigationController(rootViewController: decoratedRCamViewController)
-        }
-        self.rCamViewController = decoratedRCamViewController
-        rCamViewController.delegate = self
-        decoratedRCamViewController.delegate = self
-        decorator.delegate = self
-        rCamViewController.automaticallyApplyOrientationToImage = true
-        rCamCustomizationHandler?(rCamViewController)
-    }
 }
 
 // MARK: - CameraViewControllerDelegate

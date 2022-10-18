@@ -60,6 +60,9 @@ class ViewController: UIViewController {
     }
 
     @objc private func openCroppingRCamController() {
+        croppingRCamCoordinator?.rCamCustomizationHandler = { rCamViewController in
+            rCamViewController.view.backgroundColor = .white
+        }
         croppingRCamCoordinator?.pushCameraViewController(isAnimated: true)
     }
 }
