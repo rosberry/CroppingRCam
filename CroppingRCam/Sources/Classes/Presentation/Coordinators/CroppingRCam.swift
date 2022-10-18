@@ -15,15 +15,13 @@ public protocol CroppingRCamDelegate: AnyObject {
 public final class CroppingRCam {
     public weak var delegate: CroppingRCamDelegate?
 
-    public var isAnimated: Bool = true
-
-    public let navigationController: UINavigationController
-    public let rCamViewController: UIViewController
-
     public var rCamCustomizationHandler: ((CameraViewController) -> Void)?
     public var cropCustomizationHandler: ((CropperViewController) -> Void)?
 
     private let decorator: Decorator
+    private var navigationController: UINavigationController?
+    private var rCamViewController: UIViewController?
+    private var isAnimated: Bool = true
 
     public init(decorator: Decorator,
                 navigationController: UINavigationController?,
@@ -32,6 +30,26 @@ public final class CroppingRCam {
         self.decorator = decorator
         self.rCamCustomizationHandler = rCamCustomizationHandler
         self.cropCustomizationHandler = cropCustomizationHandler
+        self.setupRCamViewController(navigationController)
+    }
+
+    public func pushCameraViewController(isAnimated: Bool = true) {
+        guard let rCamViewController = rCamViewController else {
+            return
+        }
+        self.isAnimated = isAnimated
+        navigationController?.pushViewController(rCamViewController, animated: isAnimated)
+    }
+
+    private func openCropperViewController(_ image: UIImage) {
+        let cropViewController = CropperViewController(image: image)
+        let decoratedCropViewController = decorator.decorateCropperViewController(cropperViewController: cropViewController, image: image)
+        decoratedCropViewController.delegate = self
+        cropCustomizationHandler?(cropViewController)
+        navigationController?.pushViewController(decoratedCropViewController, animated: isAnimated)
+    }
+
+    private func setupRCamViewController(_ navigationController: UINavigationController?) {
         let rCamViewController = CameraViewController()
         let decoratedRCamViewController = decorator.decorateCameraViewController(cameraViewController: rCamViewController)
         if let navigationController = navigationController {
@@ -46,14 +64,6 @@ public final class CroppingRCam {
         decorator.delegate = self
         rCamViewController.automaticallyApplyOrientationToImage = true
         rCamCustomizationHandler?(rCamViewController)
-    }
-
-    private func openCropperViewController(_ image: UIImage) {
-        let cropViewController = CropperViewController(image: image)
-        let decoratedCropViewController = decorator.decorateCropperViewController(cropperViewController: cropViewController, image: image)
-        decoratedCropViewController.delegate = self
-        cropCustomizationHandler?(cropViewController)
-        navigationController.pushViewController(decoratedCropViewController, animated: isAnimated)
     }
 }
 

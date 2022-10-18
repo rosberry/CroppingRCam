@@ -60,10 +60,7 @@ class ViewController: UIViewController {
     }
 
     @objc private func openCroppingRCamController() {
-        guard let rCamViewController = croppingRCamCoordinator?.rCamViewController else {
-            return
-        }
-        navigationController?.pushViewController(rCamViewController, animated: true)
+        croppingRCamCoordinator?.pushCameraViewController(isAnimated: true)
     }
 }
 
