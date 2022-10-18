@@ -10,8 +10,8 @@ import RCam
 import Cripper
 
 public protocol DecoratorDelegate: AnyObject {
-    func closeButtonPresed()
-    func applyButtonPresed(imageCaptured image: UIImage)
+    func closeButtonPressed()
+    func applyButtonPressed(imageCaptured image: UIImage)
 }
 
 public protocol Decorator: AnyObject {

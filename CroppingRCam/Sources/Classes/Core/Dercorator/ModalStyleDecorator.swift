@@ -13,16 +13,16 @@ public final class ModalStyleDecorator<ModalViewController: ModalStyleDecoration
     public weak var delegate: DecoratorDelegate?
 
     public func decorateCameraViewController(cameraViewController: CameraViewController) -> ModalStyleDecorationViewController {
-        let decoratedViewControler = ModalViewController(viewController: cameraViewController)
+        let decoratedViewController = ModalViewController(viewController: cameraViewController)
         cameraViewController.closeButton.isHidden = true
-        decoratedViewControler.applyButton.isHidden = true
-        return decoratedViewControler
+        decoratedViewController.applyButton.isHidden = true
+        return decoratedViewController
     }
 
     public func decorateCropperViewController(cropperViewController: CropperViewController,
                                               image: UIImage) -> ModalStyleDecorationViewController {
-        let decoratedViewControler = ModalViewController(viewController: cropperViewController, image: image)
-        return decoratedViewControler
+        let decoratedViewController = ModalViewController(viewController: cropperViewController, image: image)
+        return decoratedViewController
     }
 
     public init() {}

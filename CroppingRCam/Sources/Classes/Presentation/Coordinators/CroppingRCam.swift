@@ -15,20 +15,23 @@ public protocol CroppingRCamDelegate: AnyObject {
 public final class CroppingRCam {
     public weak var delegate: CroppingRCamDelegate?
 
-    public var rCamCustomizationHandler: ((CameraViewController) -> Void)?
-    public var cropCustmizationHandler: ((CropperViewController) -> Void)?
+    public var isAnimated: Bool = true
 
     public let navigationController: UINavigationController
     public let rCamViewController: UIViewController
+
+    public var rCamCustomizationHandler: ((CameraViewController) -> Void)?
+    public var cropCustomizationHandler: ((CropperViewController) -> Void)?
+
     private let decorator: Decorator
 
     public init(decorator: Decorator,
                 navigationController: UINavigationController?,
                 rCamCustomizationHandler: ((CameraViewController) -> Void)? = nil,
-                cropCustmizationHandler: ((CropperViewController) -> Void)? = nil) {
+                cropCustomizationHandler: ((CropperViewController) -> Void)? = nil) {
         self.decorator = decorator
         self.rCamCustomizationHandler = rCamCustomizationHandler
-        self.cropCustmizationHandler = cropCustmizationHandler
+        self.cropCustomizationHandler = cropCustomizationHandler
         let rCamViewController = CameraViewController()
         let decoratedRCamViewController = decorator.decorateCameraViewController(cameraViewController: rCamViewController)
         if let navigationController = navigationController {
@@ -45,12 +48,12 @@ public final class CroppingRCam {
         rCamCustomizationHandler?(rCamViewController)
     }
 
-    func openCropperViewController(_ image: UIImage) {
+    private func openCropperViewController(_ image: UIImage) {
         let cropViewController = CropperViewController(image: image)
         let decoratedCropViewController = decorator.decorateCropperViewController(cropperViewController: cropViewController, image: image)
         decoratedCropViewController.delegate = self
-        cropCustmizationHandler?(cropViewController)
-        navigationController.pushViewController(decoratedCropViewController, animated: true)
+        cropCustomizationHandler?(cropViewController)
+        navigationController.pushViewController(decoratedCropViewController, animated: isAnimated)
     }
 }
 
@@ -71,11 +74,11 @@ extension CroppingRCam: CameraViewControllerDelegate {
 
 extension CroppingRCam: DecoratorDelegate {
 
-    public func closeButtonPresed() {
+    public func closeButtonPressed() {
         delegate?.croppingRCamBackEventTriggered(self)
     }
 
-    public func applyButtonPresed(imageCaptured image: UIImage) {
+    public func applyButtonPressed(imageCaptured image: UIImage) {
         delegate?.croppingRCam(self, imageCaptured: image)
     }
 }

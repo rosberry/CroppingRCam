@@ -76,7 +76,7 @@ public class ModalStyleDecorationViewController: UIViewController {
     }
 
     @objc private func closeButtonPressed() {
-        delegate?.closeButtonPresed()
+        delegate?.closeButtonPressed()
     }
 
     @objc private func applyButtonPressed() {
@@ -85,6 +85,6 @@ public class ModalStyleDecorationViewController: UIViewController {
             UINotificationFeedbackGenerator().notificationOccurred(.error)
             return
         }
-        delegate?.applyButtonPresed(imageCaptured: image)
+        delegate?.applyButtonPressed(imageCaptured: image)
     }
 }
