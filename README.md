@@ -14,6 +14,70 @@
     </a>
 </p>
 
+## Using 
+# Initialization CroppingRCamCoordinator
+```Swift
+    private var croppingRCamCoordinator: CroppingRCam?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // 1
+        let decorator = ModalStyleDecorator()
+        guard let navigationController = navigationController else {
+            return
+        }
+        // 2
+        self.croppingRCamCoordinator = CroppingRCam(decorator: decorator, navigationController: navigationController)
+        // 3
+        croppingRCamCoordinator?.delegate = self
+    }
+```
+1. `ModalStyleDecorator` - ??
+2. Initialization CroppingRCamCoordinator: 
+```Swift
+        init(decorator: Decorator,
+             navigationController: UINavigationController?,
+             rCamCustomizationHandler: ((CameraViewController) -> Void)? = nil,
+             cropCustomizationHandler: ((CropperViewController) -> Void)? = nil)
+```
+   - `decorator: ModalStyleDecorator` 
+   - `navigationController: UINavigationViewController` - navigation
+   - `rCamCustomizationHandler and cropCustomizationHandler` - needed for customization controller. Default value `nil`.
+3. `delegate: CroppingRCamDelegate` - needed for handle event on `CroppingRCamCoordinator`.
+```Swift
+// MARK: - CroppingRCamDelegate
+
+extension ViewController: CroppingRCamDelegate {
+
+    func croppingRCam(_ coordinator: CroppingRCam, imageCaptured image: UIImage) {
+        // Triggered afler cropped on image
+    }
+
+    func croppingRCamClosedEventTriggered(_ coordinator: CroppingRCam) {
+        // Triggered after make photo 
+    }
+
+    func croppingRCamBackEventTriggered(_ coordinator: CroppingRCam) {
+        // Triggered after tap close on RCamViewController
+    }
+}
+```
+
+# Show CroppingRCam
+
+```Swift
+    @objc private func openCroppingRCamController() {
+        // 1
+        croppingRCamCoordinator?.rCamCustomizationHandler = { rCamViewController in
+            rCamViewController.view.backgroundColor = .brown
+        }
+        // 2
+        croppingRCamCoordinator?.pushCameraViewController(isAnimated: true)
+    }
+```
+1. Use handler if need customization rCamViewController. 
+2. About `CroppingRCamCoordinator` use `func pushCameraViewController` and push on Camera VC.
+
 ## Requirements
 
 - iOS 11.0+
