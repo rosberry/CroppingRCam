@@ -85,4 +85,3 @@ extension ViewController: CroppingRCamDelegate {
         navigationController?.popViewController(animated: true)
     }
 }
-

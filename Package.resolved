@@ -1,0 +1,34 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Cripper",
+        "repositoryURL": "https://github.com/rosberry/Cripper",
+        "state": {
+          "branch": "master",
+          "revision": "d822983b55c95ef9b1a1d61e64e996b1377ed73a",
+          "version": null
+        }
+      },
+      {
+        "package": "Framezilla",
+        "repositoryURL": "https://github.com/rosberry/Framezilla",
+        "state": {
+          "branch": "feature/update-spm-manifest",
+          "revision": "22394eee07e845df421f663827d236f36a73587c",
+          "version": null
+        }
+      },
+      {
+        "package": "Rcam",
+        "repositoryURL": "https://github.com/rosberry/rcam",
+        "state": {
+          "branch": "master",
+          "revision": "e2bb76812f83ecce3bfabb601f1122429e21fb6f",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
