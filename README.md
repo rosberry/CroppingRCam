@@ -32,7 +32,7 @@
         croppingRCamCoordinator?.delegate = self
     }
 ```
-1. `ModalStyleDecorator` - ??
+1. `ModalStyleDecorator` - It is view controller wrapper that allows to provide action buttons for modal presentation.
 2. Initialization CroppingRCamCoordinator: 
 ```Swift
         init(decorator: Decorator,
