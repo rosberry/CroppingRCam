@@ -40,8 +40,8 @@
              rCamCustomizationHandler: ((CameraViewController) -> Void)? = nil,
              cropCustomizationHandler: ((CropperViewController) -> Void)? = nil)
 ```
-   - `decorator: ModalStyleDecorator` 
-   - `navigationController: UINavigationViewController` - navigation
+   - `decorator: ModalStyleDecorator` - It is view controller wrapper that allows to provide action buttons for modal presentation.
+   - `navigationController: UINavigationViewController` - navigation controller.
    - `rCamCustomizationHandler and cropCustomizationHandler` - needed for customization controller. Default value `nil`.
 3. `delegate: CroppingRCamDelegate` - needed for handle event on `CroppingRCamCoordinator`.
 ```Swift
