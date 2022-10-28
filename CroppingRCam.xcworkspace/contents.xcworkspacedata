@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:CroppingRCamExample/CroppingRCamExample.xcodeproj">
+      location = "group:CroppingRCamExample.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:CroppingRCam/CroppingRCam.xcodeproj">
+      location = "group:CroppingRCam.xcodeproj">
    </FileRef>
 </Workspace>
