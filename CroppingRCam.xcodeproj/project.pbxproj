@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A92E65972902661B00393BD7 /* ModalStyleDecorationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E658B2902661B00393BD7 /* ModalStyleDecorationViewController.swift */; };
+		A92E65982902661B00393BD7 /* ModalStyleDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E658C2902661B00393BD7 /* ModalStyleDecorator.swift */; };
+		A92E65992902661B00393BD7 /* Decorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E658D2902661B00393BD7 /* Decorator.swift */; };
+		A92E659A2902661B00393BD7 /* CroppingRCam.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E65902902661B00393BD7 /* CroppingRCam.swift */; };
+		A92E659C2902661B00393BD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A92E65922902661B00393BD7 /* Assets.xcassets */; };
+		A92E65A52902666600393BD7 /* Framezilla.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92E659E2902666500393BD7 /* Framezilla.xcframework */; };
+		A92E65A62902666600393BD7 /* Framezilla.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A92E659E2902666500393BD7 /* Framezilla.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A92E65A92902666600393BD7 /* Cripper.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92E65A02902666500393BD7 /* Cripper.xcframework */; };
+		A92E65AA2902666600393BD7 /* Cripper.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A92E65A02902666500393BD7 /* Cripper.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A92E65AB2902666600393BD7 /* RCam.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92E65A12902666500393BD7 /* RCam.xcframework */; };
+		A92E65AC2902666600393BD7 /* RCam.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A92E65A12902666500393BD7 /* RCam.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A92E65B32902666700393BD7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A92E65AA2902666600393BD7 /* Cripper.xcframework in Embed Frameworks */,
+				A92E65A62902666600393BD7 /* Framezilla.xcframework in Embed Frameworks */,
+				A92E65AC2902666600393BD7 /* RCam.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		514E6EBE325C78A12AA850B0 /* CroppingRCamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CroppingRCamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A92E65852902661B00393BD7 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		A92E65862902661B00393BD7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A92E658B2902661B00393BD7 /* ModalStyleDecorationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalStyleDecorationViewController.swift; sourceTree = "<group>"; };
+		A92E658C2902661B00393BD7 /* ModalStyleDecorator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalStyleDecorator.swift; sourceTree = "<group>"; };
+		A92E658D2902661B00393BD7 /* Decorator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decorator.swift; sourceTree = "<group>"; };
+		A92E65902902661B00393BD7 /* CroppingRCam.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CroppingRCam.swift; sourceTree = "<group>"; };
+		A92E65912902661B00393BD7 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		A92E65922902661B00393BD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A92E65932902661B00393BD7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A92E659E2902666500393BD7 /* Framezilla.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Framezilla.xcframework; path = Carthage/Build/Framezilla.xcframework; sourceTree = "<group>"; };
+		A92E659F2902666500393BD7 /* VisualEffectView.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = VisualEffectView.xcframework; path = Carthage/Build/VisualEffectView.xcframework; sourceTree = "<group>"; };
+		A92E65A02902666500393BD7 /* Cripper.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Cripper.xcframework; path = Carthage/Build/Cripper.xcframework; sourceTree = "<group>"; };
+		A92E65A12902666500393BD7 /* RCam.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RCam.xcframework; path = Carthage/Build/RCam.xcframework; sourceTree = "<group>"; };
+		A92E65A22902666600393BD7 /* Deboogger.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Deboogger.xcframework; path = Carthage/Build/Deboogger.xcframework; sourceTree = "<group>"; };
+		A92E65A32902666600393BD7 /* Base.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Base.xcframework; path = Carthage/Build/Base.xcframework; sourceTree = "<group>"; };
+		A92E65A42902666600393BD7 /* Bin.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Bin.xcframework; path = Carthage/Build/Bin.xcframework; sourceTree = "<group>"; };
+		DE98E50DC89BD1E91A4398CC /* CroppingRCam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CroppingRCam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11C34F6E2810340A00C09F6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A92E65A92902666600393BD7 /* Cripper.xcframework in Frameworks */,
+				A92E65A52902666600393BD7 /* Framezilla.xcframework in Frameworks */,
+				A92E65AB2902666600393BD7 /* RCam.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11C34F6F2810342200C09F6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A92E65A32902666600393BD7 /* Base.xcframework */,
+				A92E65A42902666600393BD7 /* Bin.xcframework */,
+				A92E65A02902666500393BD7 /* Cripper.xcframework */,
+				A92E65A22902666600393BD7 /* Deboogger.xcframework */,
+				A92E659E2902666500393BD7 /* Framezilla.xcframework */,
+				A92E65A12902666500393BD7 /* RCam.xcframework */,
+				A92E659F2902666500393BD7 /* VisualEffectView.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		457E9D8FBCE7516B77DCAB1A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE98E50DC89BD1E91A4398CC /* CroppingRCam.framework */,
+				514E6EBE325C78A12AA850B0 /* CroppingRCamTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7FF024D74C415057518D27DA = {
+			isa = PBXGroup;
+			children = (
+				A92E65822902661B00393BD7 /* CroppingRCam */,
+				457E9D8FBCE7516B77DCAB1A /* Products */,
+				11C34F6F2810342200C09F6B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A92E65822902661B00393BD7 /* CroppingRCam */ = {
+			isa = PBXGroup;
+			children = (
+				A92E65842902661B00393BD7 /* Tests */,
+				A92E65872902661B00393BD7 /* Sources */,
+			);
+			name = CroppingRCam;
+			path = Source/CroppingRCam;
+			sourceTree = "<group>";
+		};
+		A92E65842902661B00393BD7 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A92E65852902661B00393BD7 /* .gitkeep */,
+				A92E65862902661B00393BD7 /* Info.plist */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		A92E65872902661B00393BD7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A92E65882902661B00393BD7 /* Classes */,
+				A92E65912902661B00393BD7 /* .gitkeep */,
+				A92E65922902661B00393BD7 /* Assets.xcassets */,
+				A92E65932902661B00393BD7 /* Info.plist */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		A92E65882902661B00393BD7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A92E65892902661B00393BD7 /* Core */,
+				A92E658E2902661B00393BD7 /* Presentation */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A92E65892902661B00393BD7 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A92E658A2902661B00393BD7 /* Dercorator */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A92E658A2902661B00393BD7 /* Dercorator */ = {
+			isa = PBXGroup;
+			children = (
+				A92E658B2902661B00393BD7 /* ModalStyleDecorationViewController.swift */,
+				A92E658C2902661B00393BD7 /* ModalStyleDecorator.swift */,
+				A92E658D2902661B00393BD7 /* Decorator.swift */,
+			);
+			path = Dercorator;
+			sourceTree = "<group>";
+		};
+		A92E658E2902661B00393BD7 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				A92E658F2902661B00393BD7 /* Coordinators */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		A92E658F2902661B00393BD7 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				A92E65902902661B00393BD7 /* CroppingRCam.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		21B39D847AACE2746295813D /* CroppingRCam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7C442EC7998DF59D1BAE3B4 /* Build configuration list for PBXNativeTarget "CroppingRCam" */;
+			buildPhases = (
+				F466156234B043AAC26BF1B2 /* Sources */,
+				3CB80D4C046C6A41A07EA853 /* Swiftlint */,
+				8551693AFADAFA1311986667 /* Resources */,
+				11C34F6E2810340A00C09F6B /* Frameworks */,
+				A92E65B32902666700393BD7 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CroppingRCam;
+			productName = CroppingRCam;
+			productReference = DE98E50DC89BD1E91A4398CC /* CroppingRCam.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6F0AC38532249CD1813C5319 /* CroppingRCamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B82445120BE7E22D10688C70 /* Build configuration list for PBXNativeTarget "CroppingRCamTests" */;
+			buildPhases = (
+				A42F4DE96AA69127526B5130 /* Sources */,
+				9D8445E9D2645DE9BBD0813D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CroppingRCamTests;
+			productName = CroppingRCamTests;
+			productReference = 514E6EBE325C78A12AA850B0 /* CroppingRCamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8013A9AFD6AA98747BFF23B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					21B39D847AACE2746295813D = {
+						LastSwiftMigration = 1300;
+					};
+				};
+			};
+			buildConfigurationList = 71A57D545DEDA041A6A5DE69 /* Build configuration list for PBXProject "CroppingRCam" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 7FF024D74C415057518D27DA;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				21B39D847AACE2746295813D /* CroppingRCam */,
+				6F0AC38532249CD1813C5319 /* CroppingRCamTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8551693AFADAFA1311986667 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A92E659C2902661B00393BD7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D8445E9D2645DE9BBD0813D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3CB80D4C046C6A41A07EA853 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if command -v swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A42F4DE96AA69127526B5130 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F466156234B043AAC26BF1B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A92E65972902661B00393BD7 /* ModalStyleDecorationViewController.swift in Sources */,
+				A92E65982902661B00393BD7 /* ModalStyleDecorator.swift in Sources */,
+				A92E659A2902661B00393BD7 /* CroppingRCam.swift in Sources */,
+				A92E65992902661B00393BD7 /* Decorator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		11576B392529C665FE9868F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = GPVA8JVMU3;
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rosberry.CroppingRCamTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2FA77784AFA8657410274AB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
+				INFOPLIST_FILE = Source/CroppingRCam/Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rosberry.CroppingRCam;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		8E77207102B57BA5F0CCF287 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
+				INFOPLIST_FILE = Source/CroppingRCam/Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rosberry.CroppingRCam;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		B5BE2EDE6028D22FEA369606 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = GPVA8JVMU3;
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rosberry.CroppingRCamTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C4E9D7F4477C595442B643B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		CBEAF08CAFD67F54F4E73D28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		71A57D545DEDA041A6A5DE69 /* Build configuration list for PBXProject "CroppingRCam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBEAF08CAFD67F54F4E73D28 /* Debug */,
+				C4E9D7F4477C595442B643B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A7C442EC7998DF59D1BAE3B4 /* Build configuration list for PBXNativeTarget "CroppingRCam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FA77784AFA8657410274AB1 /* Debug */,
+				8E77207102B57BA5F0CCF287 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B82445120BE7E22D10688C70 /* Build configuration list for PBXNativeTarget "CroppingRCamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11576B392529C665FE9868F4 /* Debug */,
+				B5BE2EDE6028D22FEA369606 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8013A9AFD6AA98747BFF23B7 /* Project object */;
+}

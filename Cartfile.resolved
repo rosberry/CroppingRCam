@@ -1,0 +1,7 @@
+github "Rosberry/Deboogger" "0.12"
+github "Rosberry/Framezilla" "5.1.1"
+github "efremidze/VisualEffectView" "4.1.4"
+github "rosberry/Base-iOS" "f7a512279ed4b59d7010234ef43927d568a052d6"
+github "rosberry/Bin-iOS" "a81a5f7e2063e7bfb544f5aab1c5ed6df450c3cf"
+github "rosberry/Cripper" "1df6a347241accc3b543d48894e69820975f0799"
+github "rosberry/rcam" "master"
